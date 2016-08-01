@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Annie+Use+Your+Telescope);
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  text-align: center;
+}
+
+#playAgain {
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 10px;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+#playAgain:hover {
+  background-color: rgba(0, 50, 80, 0.1);
+}
+
+#background {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background-color: #0fb8ad;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 0;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+#playerSelect {
+  position: relative;
+  top: 20vh;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: solid 2px white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 5px white;
+}
+
+#playerSelect .selectButton {
+  background-color: transparent;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border: solid 2px white;
+  border-radius: 10px;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#playerSelect .selectButton:hover {
+  background-color: rgba(0, 50, 80, 0.1);
+}
+
+#container {
+  position: relative;
+  top: 20vh;
+  width: 606px;
+  height: 606px;
+  margin: 0 auto;
+}
+
+.block {
+  display: inline-block;
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 30px;
+  line-height: 70px;
+  box-sizing: border-box;
+}
+
+.block:hover {
+  background-color: rgba(0, 50, 80, 0.1);
+}
+
+.block h2 {
+  position: relative;
+  display: block;
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.top {
+  border-top: none;
+}
+
+.right {
+  border-right: none;
+}
+
+.bottom {
+  border-bottom: none;
+}
+
+.left {
+  border-left: none;
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  #playerSelect {
+    position: relative;
+    top: 20vh;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border: solid 2px white;
+    border-radius: 20px;
+  }
+  #playerSelect .selectButton {
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border: solid 2px white;
+    border-radius: 15px;
+    font-size: 6em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #playerSelect .selectButton:hover {
+    background-color: transparent;
+  }
+  .block {
+    border: 2px solid white;
+    border-radius: 30px;
+    line-height: 35px;
+  }
+  .block:hover {
+    background-color: transparent;
+  }
+  #playAgain {
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-size: 4em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  #playAgain:hover {
+    background-color: transparent;
+  }
+  h1 {
+    font-size: 7em;
+  }
+  #playerSelect h2 {
+    font-size: 6em;
+  }
+  #result h2 {
+    font-size: 6em;
+  }
+  h4 {
+    font-size: 4em;
+    line-height: 20px;
+  }
+  .top {
+    border-top: none;
+  }
+  .right {
+    border-right: none;
+  }
+  .bottom {
+    border-bottom: none;
+  }
+  .left {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #playerSelect {
+    position: relative;
+    top: 20vh;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: solid 2px white;
+    border-radius: 20px;
+  }
+  #playerSelect .selectButton {
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #playerSelect .selectButton:hover {
+    background-color: transparent;
+  }
+  #playAgain {
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-size: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  #playAgain:hover {
+    background-color: transparent;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  #playerSelect h2 {
+    font-size: 3em;
+  }
+  #result h2 {
+    font-size: 4em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  .top {
+    border-top: none;
+  }
+  .right {
+    border-right: none;
+  }
+  .bottom {
+    border-bottom: none;
+  }
+  .left {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #container {
+    position: relative;
+    top: 25vh;
+    width: 310px;
+    height: 310px;
+  }
+  .block {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 15px;
+    line-height: 35px;
+    box-sizing: border-box;
+  }
+  .block h2 {
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .top {
+    border-top: none;
+  }
+  .right {
+    border-right: none;
+  }
+  .bottom {
+    border-bottom: none;
+  }
+  .left {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-height: 745px) {
+  #container {
+    position: relative;
+    top: 25vh;
+    width: 310px;
+    height: 310px;
+  }
+  .block {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 15px;
+    line-height: 35px;
+  }
+  .block h2 {
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+  }
+  .top {
+    border-top: none;
+  }
+  .right {
+    border-right: none;
+  }
+  .bottom {
+    border-bottom: none;
+  }
+  .left {
+    border-left: none;
+  }
+}
