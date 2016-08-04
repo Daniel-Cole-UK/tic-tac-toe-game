@@ -152,213 +152,160 @@ h4 {
   border-left: none;
 }
 
-@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-  #playerSelect {
-    position: relative;
-    top: 20vh;
-    width: 600px;
-    height: 600px;
-    margin: 0 auto;
-    border: solid 2px white;
-    border-radius: 20px;
-  }
-  #playerSelect .selectButton {
-    background-color: transparent;
-    color: white;
-    width: 200px;
-    height: 200px;
-    border: solid 2px white;
-    border-radius: 15px;
-    font-size: 6em;
-    font-family: 'Montserrat', sans-serif;
-  }
-  #playerSelect .selectButton:hover {
-    background-color: transparent;
-  }
-  .block {
-    border: 2px solid white;
-    border-radius: 30px;
-    line-height: 35px;
-  }
-  .block:hover {
-    background-color: transparent;
-  }
-  #playAgain {
-    background-color: transparent;
-    border: solid 2px white;
-    border-radius: 10px;
-    font-size: 4em;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-  }
-  #playAgain:hover {
-    background-color: transparent;
-  }
+@media only screen and (min-width: 768px) and (max-height: 800px) {
   h1 {
-    font-size: 7em;
+    font-size: 3em;
   }
-  #playerSelect h2 {
-    font-size: 6em;
-  }
-  #result h2 {
-    font-size: 6em;
-  }
-  h4 {
-    font-size: 4em;
-    line-height: 20px;
-  }
-  .top {
-    border-top: none;
-  }
-  .right {
-    border-right: none;
-  }
-  .bottom {
-    border-bottom: none;
-  }
-  .left {
-    border-left: none;
-  }
-}
 
-@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
   #playerSelect {
-    position: relative;
     top: 20vh;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
+    width: 250px;
+    height: 250px;
     border: solid 2px white;
     border-radius: 20px;
   }
+
   #playerSelect .selectButton {
-    background-color: transparent;
-    color: white;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border: solid 2px white;
     border-radius: 10px;
     font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
   }
-  #playerSelect .selectButton:hover {
-    background-color: transparent;
+
+
+  #container {
+    top: 30vh;
+    width: 405px;
+    height: 405px;
   }
-  #playAgain {
-    background-color: transparent;
-    border: solid 2px white;
-    border-radius: 10px;
-    font-size: 2em;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+
+  .block {
+    width: 134px;
+    height: 134px;
+    border: 1px solid white;
+    border-radius: 15px;
+    line-height: 50px;
   }
-  #playAgain:hover {
-    background-color: transparent;
-  }
-  h1 {
+
+  .block h2 {
     font-size: 3em;
   }
-  #playerSelect h2 {
-    font-size: 3em;
-  }
-  #result h2 {
-    font-size: 4em;
-  }
-  h4 {
-    font-size: 1.5em;
-  }
+  
   .top {
     border-top: none;
   }
+
   .right {
     border-right: none;
   }
+
   .bottom {
     border-bottom: none;
   }
+
   .left {
     border-left: none;
-  }
+  }  
 }
 
 @media only screen and (max-width: 767px) {
-  #container {
-    position: relative;
-    top: 25vh;
-    width: 310px;
-    height: 310px;
+  h1 {
+    font-size: 2em;
   }
-  .block {
-    display: inline-block;
-    float: left;
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-    border-radius: 15px;
-    line-height: 35px;
-    box-sizing: border-box;
-  }
-  .block h2 {
-    position: relative;
-    display: block;
+
+  h2 {
     font-size: 2.5em;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    text-align: center;
   }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  #playerSelect {
+    top: 20vh;
+    width: 250px;
+    height: 250px;
+    border: solid 2px white;
+    border-radius: 20px;
+  }
+
+  #playerSelect .selectButton {
+    width: 75px;
+    height: 75px;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-size: 3em;
+  }
+
+
+  #container {
+    top: 30vh;
+    width: 230px;
+    height: 230px;
+  }
+
+  .block {
+    width: 75px;
+    height: 75px;
+    border: 1px solid white;
+    border-radius: 15px;
+    line-height: 5px;
+  }
+
+  .block h2 {
+    font-size: 2.5em;
+  }
+  
   .top {
     border-top: none;
   }
+
   .right {
     border-right: none;
   }
+
   .bottom {
     border-bottom: none;
   }
+
   .left {
     border-left: none;
-  }
+  }  
 }
 
-@media only screen and (max-height: 745px) {
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
   #container {
-    position: relative;
-    top: 25vh;
-    width: 310px;
-    height: 310px;
+    top: 20vh;
+    width: 230px;
+    height: 230px;
   }
-  .block {
-    display: inline-block;
-    float: left;
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-    border-radius: 15px;
-    line-height: 35px;
+  
+  h2 {
+    font-size: 2em;
   }
-  .block h2 {
-    position: relative;
-    display: block;
-    font-size: 2.5em;
+  
+  #playerSelect {
+    top: 20vh;
+    width: 200px;
+    height: 200px;
+    border: solid 2px white;
+    border-radius: 20px;
   }
-  .top {
-    border-top: none;
-  }
-  .right {
-    border-right: none;
-  }
-  .bottom {
-    border-bottom: none;
-  }
-  .left {
-    border-left: none;
-  }
+
+  #playerSelect .selectButton {
+    width: 65px;
+    height: 65px;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-size: 2em;
+  }  
 }
